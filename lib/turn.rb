@@ -11,14 +11,11 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  def position_taken?(array, ind)
-    if array[ind] == " " || array[ind] == "" || array[ind] == nil
-      return true
-    else
-      return false
-    end
+
+
+  def position_taken?(board, location)
+    board[location] != " " && board[location] != ""
   end
-end
 
 
 def move(board, index, character = "X")
